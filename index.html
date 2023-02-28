@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários: Elementos e interação com a DOM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 id="text-topo">Inscrição Vestibular</h2>
+    <form class="todas-informacoes" action="">
+        <div>
+            <label for="name">Informe seu nome</label>
+            <input id="name" type="text" placeholder="Ex.: João da Silva">
+        </div>
+
+        <div>
+            <label for="email">Informe seu e-mail</label>
+            <input id="email" type="email" placeholder="email@email.com">
+        </div>
+
+        <div>
+            <label for="ano-nascimento">Informe o ano de nascimento</label>
+            <input id="ano-nascimento" type="number" placeholder="Ex.: 1992">
+        </div>
+
+        <div>
+            <label for="cidade">Selecione sua cidade da prova</label>
+            <select name="cidades" id="cidade">
+                <option value="Bahia">BA</option>
+                <option value="São Paulo">SP</option>
+                <option value="Minas Gerais">MG</option>
+                <option value="Mato Grosso">MT</option>
+                <option value="Rio de Janeiro">RJ</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="radio"><b>Em qual período deseja realizar a prova?</b></label>
+
+            <div class="periods">
+                <input type="radio" id="manha" name="drone" value="morning" checked>
+                <label for="manha">Manhã</label>
+            </div>
+            <div class="periods">
+                <input type="radio" id="tarde" name="drone" value="afternoon">
+                <label for="tarde">Tarde</label>
+            </div>
+            <div class="periods">
+                <input type="radio" id="noite" name="drone" value="night">
+                <label for="noite">Noite</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="checkbox"><b>Em quais cursos você tem interesse?</b></label>
+
+            <div class="checkbox">
+                <input type="checkbox" name="materias" id="math" value="math">
+                <label for="math">Matemática</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="materias" id="science-pc" value="science-pc">
+                <label for="science-pc">Ciência da Computação</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="materias" id="data-science" value="data-science">
+                <label for="data-science">Data Science</label>
+            </div>
+
+
+        </div>
+
+        <div>
+            <label for="password">Senha de recuperação</label>
+            <input id="password" type="password">
+        </div>
+
+
+        <button>SALVAR</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
